@@ -1,8 +1,8 @@
+// // $(window).load(function() {
+// // 	alert("ffdf");
+// // 	$('#loading').show();
+// // });
 // $(window).load(function() {
-// 	alert("ffdf");
-// 	$('#loading').show();
+// 	$('#loading').fadeIn("slow");
 // });
-$(window).load(function() {
-	$('#loading').fadeIn("slow");
-});
- // executes when HTML-Document is loaded and DOM is ready
+//  // executes when HTML-Document is loaded and DOM is ready
