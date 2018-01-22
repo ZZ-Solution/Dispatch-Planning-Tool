@@ -48,7 +48,7 @@ def hello(request):
     #----------------------------------Setting the directory-----------------------------------------#
 	#direc = "C:\\Users\\600018630\\Documents\\OtherProjects\\CromptonDispatchPlanning\\Input_Sheets"
 	os.chdir(direc)
-	print(repr(direc))
+	#print(repr(direc))
 	#os.chdir(r'C:\Python27\Dispatc-Planning-Tool\Input_Sheets')
 	in_time = time.clock()
 	##################################################################################################
@@ -261,6 +261,7 @@ def hello(request):
 	###################################################################################################
 	#os.chdir(r'C:\Python27\Dispatc-Planning-Tool\Calculated_Sheets')
 	os.chdir(calc_direc)
+	#print(repr(calc_direc))
 	#os.chdir(r"C:\Users\600018630\Documents\OtherProjects\CromptonDispatchPlanning\Calculated_Sheets")
 	STPO_Pivot.to_csv("STPO_Pivot.csv")
 	Dispatch_File_Pivot.to_csv("Dispatch_Pivot.csv")
@@ -272,6 +273,7 @@ def hello(request):
 	###################################################################################################
 	#os.chdir(r'C:\Python27\Dispatc-Planning-Tool\Output_Sheets')
 	os.chdir(output_direc)
+	#print(repr(output_direc))
 	#os.chdir(r"C:\Users\600018630\Documents\OtherProjects\CromptonDispatchPlanning\Output_Sheets")
 	allocated_df_new.to_csv("Allocated.csv",index = False) 
 	allocated_box.to_csv("BOX_WISE_Allocation.csv",index = False) 
