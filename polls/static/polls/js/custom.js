@@ -1,8 +1,14 @@
-// // $(window).load(function() {
-// // 	alert("ffdf");
-// // 	$('#loading').show();
+// // $(window).load(function(){
+// // 	alert("vvv");
+// // 	event.preventDefault();
 // // });
-// $(window).load(function() {
-// 	$('#loading').fadeIn("slow");
+// <script type="text/javascript">
+// $( window ).on( "load", function() {
+//   $('#loading').show();
+//   // event.preventDefault();
 // });
-//  // executes when HTML-Document is loaded and DOM is ready
+// $( window ).unload(function() {
+//   $('#loading').hide();
+//   // event.preventDefault();
+// });
+// </script>

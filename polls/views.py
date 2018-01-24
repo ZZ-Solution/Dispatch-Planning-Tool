@@ -7,6 +7,7 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 # Create your views here.
 from django.http import HttpResponse
+from django.template import loader
 from django.utils import timezone
 
 ##IMPORT FILE
@@ -282,6 +283,9 @@ def hello(request):
 	tot_time  = out_time - in_time
 
 	print ("Total_time taken :{} minutes".format(tot_time/60))
+	#t = loader.get_template('polls/hello.html')
+	#c = {'foo': 'bar'}
+	#return HttpResponse(t.render('', request), content_type='application/html')
 	return HttpResponse("Successfully Done")
   except Exception:
     import traceback

@@ -3,8 +3,8 @@
 <head>
   {% load static %}
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-<!-- <script src="{% static 'polls/js/jquery.min.js' %}"></script>  -->
-<!-- <script src="{% static 'polls/js/custom.js' %}"></script>    -->
+<script src="{% static 'polls/js/jquery.min.js' %}"></script> 
+<script src="{% static 'polls/js/custom.js' %}"></script>   
 <link rel="stylesheet" type="text/css" href="{% static 'polls/css/style.css' %}" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -95,7 +95,7 @@ input[type=submit]:hover {
         <label for="lname">Calculated Sheets Path: </label>
       </div>
       <div class="col-75">
-        <input id="input_sheets" type="text" name="calculated_sheets" placeholder="Calculated Sheets Path.." required="true" ></br>
+        <input id="calculate_sheets" type="text" name="calculated_sheets" placeholder="Calculated Sheets Path.." required="true" ></br>
       </div>
     </div>
     <div class="row">
@@ -103,7 +103,7 @@ input[type=submit]:hover {
         <label for="lname">Output Sheets Path: </label>
       </div>
       <div class="col-75">
-        <input id="input_sheets" type="text" name="output_sheets" placeholder="Output Sheets Path.." required="true"></br>
+        <input id="output_sheets" type="text" name="output_sheets" placeholder="Output Sheets Path.." required="true"></br>
       </div>
     </div>
     </div>
@@ -114,3 +114,6 @@ input[type=submit]:hover {
 </div>
 </body>
 </html>
+
+
+
