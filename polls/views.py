@@ -41,9 +41,9 @@ def vote(request, question_id):
 
 def hello(request):
   try:
-	direc = request.POST.get('input_sheets')
-	calc_direc = request.POST.get('calculated_sheets')
-	output_direc = request.POST.get('output_sheets')
+	direc = request.POST.get(r'input_sheets')
+	calc_direc = request.POST.get(r'calculated_sheets')
+	output_direc = request.POST.get(r'output_sheets')
 	#----------------------------------Setting the directory-----------------------------------------#
     #direc = "C:\\Users\\600018630\\Documents\\OtherProjects\\CromptonDispatchPlanning\\Input_Sheets"
     #----------------------------------Setting the directory-----------------------------------------#
@@ -226,8 +226,7 @@ def hello(request):
 	allocated_df_new.iloc[:,2:] = allocated_df_new.iloc[:,2:].applymap(lambda x :None)
 	Item_list = Net_require_df["Material"].unique()
 	for j in range(0,Priority_df_sorted.shape[0]):
-		print(j)
-		#print ("Running Priority number : {} out of {}".format(j+1,Priority_df_sorted.shape[0]))
+		print ("Running Priority number : {} out of {}".format(j+1,Priority_df_sorted.shape[0]))
 		Location = Priority_df_sorted["TP/DC"][j]
 		colll = Location + "_Net" 
 		date_ = Priority_df_sorted["Date"][j]
