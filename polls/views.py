@@ -283,10 +283,8 @@ def hello(request):
 	tot_time  = out_time - in_time
 
 	print ("Total_time taken :{} minutes".format(tot_time/60))
-	#t = loader.get_template('polls/hello.html')
-	#c = {'foo': 'bar'}
-	#return HttpResponse(t.render('', request), content_type='application/html')
-	return HttpResponse("Successfully Done")
+	return render_to_response('polls/hello.html')
+	# return HttpResponse("Successfully Done")
   except Exception:
     import traceback
     print traceback.format_exc()
