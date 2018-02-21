@@ -12,7 +12,7 @@ from django.utils import timezone
 
 ##IMPORT FILE
 # import pandas as pd
-import numpy as np
+# import numpy as np
 import os
 from pandas import Series,DataFrame
 import itertools
