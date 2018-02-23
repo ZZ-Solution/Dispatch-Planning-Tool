@@ -42,14 +42,14 @@ def vote(request, question_id):
 def hello(request):
   try:
   # Base path
-	base_path = os.path.abspath(os.path.join("import-data"))
+	# base_path = os.path.abspath(os.path.join("import-data"))
 	direc = request.POST.get(r'input_sheets')
 	calc_direc = request.POST.get(r'calculated_sheets')
 	output_direc = request.POST.get(r'output_sheets')
 	# start modification base path
-	direc = os.path.join(base_path, direc)
-	calc_direc = os.path.join(base_path, calc_direc)
-	output_direc = os.path.join(base_path, output_direc)
+	# direc = os.path.join(base_path, direc)
+	# calc_direc = os.path.join(base_path, calc_direc)
+	# output_direc = os.path.join(base_path, output_direc)
 	print("===============")
 	print(direc)
 	print(calc_direc)
